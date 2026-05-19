@@ -1,5 +1,8 @@
 # Laboratorio SO — Autenticación con Google OAuth 2.0
 
+## Andres Felipe Ospina Bautista 
+## David Leonardo Aguirre Sanchez
+
 ## Descripción
 
 Aplicación web desarrollada como laboratorio de la asignatura de Sistemas Operativos, que implementa un sistema de autenticación utilizando Google Identity Services (GSI) y el protocolo OAuth 2.0 con OpenID Connect. La app permite a los usuarios iniciar sesión con su cuenta de Google de forma segura, sin que la aplicación gestione ni almacene contraseñas.
@@ -82,5 +85,4 @@ En `index.html`:
 | Origen | Validado contra lista blanca en Google Cloud |
 | Formulario de correo | Deshabilitado — solo se permite acceso con Google |
 
-## Andres Felipe Ospina Bautista 
-## David Leonardo Aguirre Sanchez
+
