@@ -85,4 +85,5 @@ En `index.html`:
 | Origen | Validado contra lista blanca en Google Cloud |
 | Formulario de correo | Deshabilitado — solo se permite acceso con Google |
 
+<img width="1919" height="941" alt="image" src="https://github.com/user-attachments/assets/a1fb83f1-b1ad-4288-9065-8e5365eef916" />
 
