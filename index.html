@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar sesión</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="brand">
+    <div class="brand-icon">
+      <svg viewBox="0 0 52 28" xmlns="http://www.w3.org/2000/svg">
+        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central"
+              font-family="Inter, sans-serif" font-size="22" font-weight="600" fill="#fff">SO</text>
+      </svg>
+    </div>
+    <h1>Laboratorio SO</h1>
+    <p>Laboratorio de autenticación con Google</p>
+  </div>
+
+  <div class="card">
+
+    <!-- LOGIN -->
+    <div id="login-view">
+      <h2>Iniciar sesión</h2>
+      <p class="subtitle">Bienvenido de nuevo</p>
+
+      <button class="google-btn" onclick="signInWithGoogle()">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" />
+        Continuar con Google
+      </button>
+
+      <div class="divider">
+        <span>o continúa con tu correo</span>
+      </div>
+
+      <div class="email-form">
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" placeholder="nombre@ejemplo.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" placeholder="••••••••" />
+        </div>
+
+        <button class="btn-primary" onclick="demoEmailLogin()">
+          Iniciar sesión
+        </button>
+
+        <p class="error-msg" id="email-error">
+          Credenciales incorrectas. Usa Google para iniciar sesión.
+        </p>
+      </div>
+
+      <p class="forgot">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </p>
+
+      <p class="register-link">
+        ¿No tienes cuenta? <a href="#">Regístrate</a>
+      </p>
+    </div>
+
+    <!-- PROFILE -->
+    <div id="profile-view" class="profile-card">
+      <img
+        id="profile-pic"
+        class="profile-avatar"
+        src=""
+        alt="Foto de perfil"
+        style="display:none"
+      />
+
+      <div id="profile-initials" class="profile-avatar-placeholder"></div>
+
+      <p class="profile-name" id="profile-name">Usuario</p>
+      <p class="profile-email" id="profile-email">usuario@ejemplo.com</p>
+
+      <div class="badge-success">
+        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5 13l4 4L19 7"
+          />
+        </svg>
+
+        Sesión iniciada correctamente
+      </div>
+
+      <br />
+
+      <button class="btn-logout" onclick="signOut()">
+        Cerrar sesión
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<div
+  id="g_id_onload"
+  data-client_id="254273646286-g8oubc5esf8ujvfab5m1oaodeiop34kn.apps.googleusercontent.com"
+  data-callback="handleCredentialResponse"
+  data-auto_prompt="false">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
