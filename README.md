@@ -81,3 +81,6 @@ En `index.html`:
 | Token | JWT firmado digitalmente por Google |
 | Origen | Validado contra lista blanca en Google Cloud |
 | Formulario de correo | Deshabilitado — solo se permite acceso con Google |
+
+**Andres Felipe Ospina Bautista** 
+**David Leonardo Aguirre Sanchez**
