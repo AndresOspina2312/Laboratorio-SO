@@ -86,4 +86,8 @@ En `index.html`:
 | Formulario de correo | Deshabilitado — solo se permite acceso con Google |
 
 <img width="1919" height="941" alt="image" src="https://github.com/user-attachments/assets/a1fb83f1-b1ad-4288-9065-8e5365eef916" />
+<img width="1919" height="942" alt="image" src="https://github.com/user-attachments/assets/bdfdc193-fb77-4485-ac79-48fbcfcd55ec" />
+<img width="1918" height="943" alt="image" src="https://github.com/user-attachments/assets/3e34b33c-9ed2-4a11-a9d8-a9ba63ec57fd" />
+
+
 
