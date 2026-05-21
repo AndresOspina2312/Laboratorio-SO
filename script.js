@@ -66,7 +66,13 @@ function signInWithGoogle() {
   google.accounts.id.prompt((n) => {
     if (n.isNotDisplayed() || n.isSkippedMoment()) {
       const tmp = document.createElement('div');
-
+      ///////////////////////////////
+      tmp.style.position = 'fixed';
+      tmp.style.top = '-9999px';
+      tmp.style.left = '-9999px';
+      tmp.style.opacity = '0';
+      tmp.style.pointerEvents = 'none';
+      ////////////////////////////////////
       document.body.appendChild(tmp);
 
       google.accounts.id.renderButton(tmp, {
@@ -75,7 +81,11 @@ function signInWithGoogle() {
       });
 
       tmp.querySelector('div[role=button]')?.click();
+            // Clean up the hidden button after the flow completes or is cancelled
+      setTimeout(() => tmp.remove(), 5000);
+      /////////////////////
     }
+    
   });
 }
 
@@ -136,4 +146,5 @@ window.addEventListener('load', () => {
       callback: handleCredentialResponse
     });
   }
+
 });
